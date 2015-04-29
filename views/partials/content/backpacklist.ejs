@@ -1,0 +1,22 @@
+<article class="speakerslist">
+  <section class="layout">
+    <div class="speakers">
+      <% appdata.backpack.forEach(function(item) { %>
+        <article class="artist group">
+          <h3><%= item.category %> <span class="small">
+            <a href="/backpack/<%= item.category %>">
+            <%= item.name %></a><span></h3>
+            <p><a href="/backpack/<%= item.category %>"></a>
+              <% if (page!= 'home') { %>
+                <% if (page === 'backpackList') { %>
+                  <%- item.summary %>
+                <% } else { %>
+                  <%- item.summary %>
+                <% } %>
+              <% } %>
+            </a></p>
+        </article>
+      <% }); %>
+    </div>
+  </section>
+</article>

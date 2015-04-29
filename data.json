@@ -1,16 +1,16 @@
 {
   "backpack": [{
-    "name": "Vocab",
+    "category": "Vocab",
     "summary" : "A list of the top ten most tested vocab words.",
     "front": ["Sedulous", "Invective", "Pithy", "Inimical", "Diatribe", "Impassive", "Surfeit", "Alacrity", "Tantamount", "Refulgent"],
     "back": ["Diligent, hard-working", "Insulting, highly critical language", "Percise and breif", "Damaging, harmful", "A forceful, bitter verbal attack", "Revealing no emotion", "An excessive amount", "Eagerness", "Equivalent in seriousness", "Radiant, shinny, brilliant"]
   },{
-  "name": "Portuguese",
+  "category": "Portuguese",
     "summary" : "A review of Portuguese vocabulary.",
     "front": ["Garden", "Trash", "Mirror", "To Cook", "Work", "Kiss", "Dirty", "Far", "Grill", "To Imagine" ],
     "back": ["O Jardim", "Lixo", "O Espelho", "Cozihar", "O Trablaho", "O Beijo", "Sujo", "Longe (de)", "A Churrasqueira", "Imaginar"]
   },{
-    "name": "Trivia",
+    "category": "Trivia",
     "summary" : "Quiz yourself on random facts about history, music, and science.",
     "front": ["Which person has won the most Oscars? (hint: Annimation)", "Who said: Genius is 1% inspiration and 99% persperation?","Who is the Roman God of War?","The statue of Christ the Redeemer overlooks which city?","What is the capital of Ecuador","How many U.S. states border the Gulf of Mexico?","What is the world's longest river?","Slumdog Millionaire is set in what Indian City?","Who is Superman's archenemy?","What is the term for shooting a 3 on a Par-5 hole?" ],
     "back": ["Walt Disney", "Thomas Edison", "Mars", "Rio De Janeiro", "Quito", "Five","Amazon", "Mumbai", "Lex Luthor", "Eagle"]

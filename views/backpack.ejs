@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head><% include partials/template/head.ejs %></head>
+  <body class="<%= page %>">
+    <% include partials/template/header.ejs %>
+    <section class="layout">
+      <div class="primary">
+        <% include partials/content/backpacklist.ejs %>
+      </div><!-- primary -->
+    </section><!-- layout -->
+    <% include partials/template/footer.ejs %>
+    <% include partials/template/jsdefaults.ejs %>
+  </body>
+</html>

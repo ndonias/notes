@@ -2,7 +2,8 @@
 	<h1>Cards</h1>
     <% if (front.length > 0) { %>
       <% for (i=1; i<front.length; i++) { %>
-        <div id="card"> 
+       
+        <div id="card-<%=[i]%>" class="card"> 
 		  <div class="front"> 
 		    <%= front[i] %>
 		  </div> 
@@ -10,12 +11,15 @@
 		    <%= back[i] %>
 		  </div> 
 		</div>
+
       <% } %>
     <% } %>
 
 <script>
 $(function($) {
-  $("#card").flip(); 
+	for (i=1; i<=10; i++){
+  	$("#card-"+i).flip();
+  };
 });
 </script>
 </article>

@@ -1,9 +1,10 @@
 <article class="categorylist">
     <% if (front.length > 0) { %>
     <h1>Cards</h1>
+    <p>Press space to move to next card</p>
       <% for (i=1; i<front.length; i++) { %>
        
-        <div id="card-<%=[i]%>" class="card"> 
+        <div id="card-<%=[i]%>" class="card not-current"> 
 		  <div class="front"> 
 		    <%= front[i] %>
 		  </div> 
@@ -18,8 +19,43 @@
 </article>
 <script>
 $(function($) {
+  var starter = $('.card').first()
 	for (i=1; i<=10; i++){
+
+    if( i === 1){
+      var starterTwo = $('.card').first()
+      starterTwo.removeClass('not-current')
+    }
+    
+    // $('html').keypress(function(){
+    //   console.log(starter)
+    //   // console.log($('.card')[])
+    //   // debugger
+    //   // console.log( $('.card')[i+1])
+    //   starter.addClass('not-current');
+    //   starter.next().removeClass('not-current');
+    //   starter = starter.next();
+    // })
+    // hit arrow ---> right
+    // remove class 'not-current' from current card
+    // then card id + 1 addClass current
+
   	$("#card-"+i).flip();
+  	// hit arrow ---> right
+  	// remove class 'current' from current card
+  	// then card id + 1 addClas current
+  	
+  	// $("card-"+i).css("display:none")
   };
+
+  $('html').keypress(function(){
+    console.log(starter)
+    // console.log($('.card')[])
+    // debugger
+    // console.log( $('.card')[i+1])
+    starter.addClass('not-current');
+    starter.next().removeClass('not-current');
+    starter = starter.next();
+  })
 });
 </script>

@@ -185,6 +185,8 @@ header .navigation ul.nav li:hover a {
   color: #f8c64c;
 }
 
+/**************CARDS****************/
+
 .card {
         width: 350px;
         height: 200px;
@@ -201,8 +203,12 @@ header .navigation ul.nav li:hover a {
       .back {
         background-color: lightgray;
       }
-}
 
+
+.not-current{
+  display: none;
+}
+/**************Media Queries****************/
 @media (max-width: 500px){
     .card {
         width: 200px;

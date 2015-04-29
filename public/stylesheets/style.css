@@ -138,9 +138,9 @@ p {
 footer {
   color: #eae3cb;
   background: #0d3340;
-  margin-top: 20px;
-  padding-top: 20px;
-  padding-bottom: 100px;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
  
 .backpack h3 {
@@ -149,71 +149,10 @@ footer {
   border-bottom: 1px dotted #819090;
   margin-bottom: 5px;
 }
-.backpack img {
-  width: 120px;
-  float: left;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  border-radius: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-}
- 
-.socialmediaicons .title {
-  float: left;
-}
-.socialmediaicons ul {
-  float: left;
-}
-.socialmediaicons ul li {
-  display: inline-block;
-  margin-left: 5px;
-}
-.socialmediaicons ul li img {
-  width: 30px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-}
- 
-.pixgrid {
-  overflow: hidden;
-  *zoom: 1;
-}
-.pixgrid img {
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  border-radius: 10px;
-  width: 30%;
-  max-width: 120px;
-  cursor: pointer;
-}
- 
-.nextmeeting {
-  overflow: hidden;
-  *zoom: 1;
-}
-.nextmeeting img {
-  width: 30%;
-  max-width: 130px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  border-radius: 10px;
-  float: left;
-  margin-right: 3%;
-}
  
 header img {
   max-width: 100%;
-  margin-top: 10px;
+  margin: auto;
 }
 header .hero {
   width: 100%;
@@ -262,14 +201,20 @@ header .navigation ul.nav li:hover a {
       .back {
         background-color: lightgray;
       }
- 
+}
+
+@media (max-width: 500px){
+    .card {
+        width: 200px;
+  }
+}
+
 @media (min-width: 47em) {
   .layout .primary {
     width: 66.10169%;
     float: left;
     margin-right: 1.69492%;
   }
- 
   .layout .secondary {
     width: 32.20339%;
     float: right;
@@ -304,6 +249,7 @@ header .navigation ul.nav li:hover a {
     -o-transition: all 1s ease-out;
     transition: all 1s ease-out;
   }
+  
   header .hero .branding {
     position: absolute;
     bottom: 0;
@@ -321,38 +267,38 @@ header .navigation ul.nav li:hover a {
     padding-bottom: 10px;
   }
  
-  .home .speakerslist h1, .home .speakerslist h2, .home .speakerslist h3, .home .speakerslist h4, .home .speakerslist h5, .home .speakerslist h6 {
+  .home .backpacklist h1, .home .backpacklist h2, .home .backpacklist h3, .home .backpacklist h4, .home .backpacklist h5, .home .backpacklist h6 {
     text-shadow: none;
     border-bottom: none !important;
   }
- 
-  .home .speakerslist h1 {
+
+  .home .backpacklist h1 {
     font-size: 2.6rem;
     line-height: 1em;
     color: #738a05;
   }
  
-  .home .speakerslist h3 {
+  .home .backpacklist h3 {
     color: #d69a08;
     line-height: .9em;
   }
  
-  .home .speakerslist .small {
+  .home .backpacklist .small {
     padding-top: .4em !important;
     line-height: 1em;
     color: #2390b3;
   }
  
-  .home .speakerslist .small a {
+  .home .backpacklist .small a {
     color: #2390b3;
     text-decoration: none;
   }
  
-  .home .speakerslist .small a:hover {
+  .home .backpacklist .small a:hover {
     text-decoration: underline;
   }
  
-  .home .speakerslist img.speaker {
+  .home .backpacklist img.speaker {
     float: none;
     width: 40%;
     max-width: 170px;
@@ -364,11 +310,11 @@ header .navigation ul.nav li:hover a {
     border-radius: 50%;
   }
  
-  .home .speakerslist .small {
+  .home .backpacklist .small {
     display: block;
   }
  
-  .home .speakerslist p:nth-of-type(2) {
+  .home .backpacklist p:nth-of-type(2) {
     font-weight: 200 !important;
     text-align: left;
     font-size: .8em;
@@ -380,18 +326,18 @@ header .navigation ul.nav li:hover a {
     opacity: 0;
   }
  
-  .home .speakerslist:hover p:nth-of-type(2) {
+  .home .backpacklist:hover p:nth-of-type(2) {
     line-height: 1.5em;
     opacity: 1;
   }
  
-  .home .speakerslist .artist {
+  .home .backpacklist .artist {
     width: 32.20339%;
     float: left;
     margin-right: 1.69492%;
   }
  
-  .home .speakerslist .artist:nth-of-type(3) {
+  .home .backpacklist .artist:nth-of-type(3) {
     width: 32.20339%;
     float: right;
     margin-right: 0;
@@ -399,7 +345,7 @@ header .navigation ul.nav li:hover a {
 }
  
 @media (max-width: 47em) {
-  .home .speakerslist {
+  .home .backpacklist {
     display: none;
   }
 }

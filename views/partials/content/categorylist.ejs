@@ -1,0 +1,11 @@
+<article class="artworklist">
+	<h1>Cards</h1>
+	<div class="pixgrid">
+    <% if (front.length > 0) { %>
+      <% for (i=0; i<front.length; i++) { %>
+        <p><%= front[i] %></p>
+        <p><%= back[i] %></p>
+      <% } %>
+    <% } %>
+  </div>
+</article>

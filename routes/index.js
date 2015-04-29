@@ -18,11 +18,17 @@ router.get('/', function(req, res) {
 /* GET backpack page. */
 router.get('/backpack', function(req, res) {
 	var myCategory = [];
-	myCategory = appdata.category;
+	var myFront = [];
+	var myBack = [];
+	appdata.backpack.forEach(function(item){
+		myCategory.push(item);
+	});
 
   res.render('backpack', { 
   	title: 'Backpack',
   	category:  myCategory,
+  	front: myFront,
+  	back: myBack,
   	page: 'backpackList'
 	});
 });
@@ -36,7 +42,7 @@ router.get('/backpack/:backpackid', function(req, res) {
 		if (item.category == req.params.backpackid){
 			myCategory.push(item);
 			myFront = myCategory.concat(item.front);
-			myFront = myCategory.concat(item.back);
+			myBack = myCategory.concat(item.back);
 		}
 	});
   res.render('backpack', { 
